@@ -1,18 +1,18 @@
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://165.22.76.72:5432/spring?currentSchema=shop
-    username: psqluser
-    password: Password123
-  jpa:
-    properties:
-      hibernate:
-	jdbc:
-	  lob:
-	    non_contextual_creation: true
+ datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://165.22.76.72:5432/spring?currentSchema=shop
+  username: psqluser
+  password: Password123
+ jpa:
+  properties:
+   hibernate:
+    jdbc:
+     lob:
+      non_contextual_creation: true
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-    instance:
-      preferIpAddress: true
+ client:
+  serviceUrl:
+   defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+   preferIpAddress: true
