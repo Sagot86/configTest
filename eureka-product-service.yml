@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://165.22.76.72:5432/spring?currentSchema=shop
+    username: psqluser
+    password: Password123
+  jpa:
+    properties:
+      hibernate:
+	jdbc:
+	  lob:
+	    non_contextual_creation: true
