@@ -10,9 +10,4 @@ spring:
     jdbc:
      lob:
       non_contextual_creation: true
-eureka:
- client:
-  serviceUrl:
-   defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-   preferIpAddress: true
+
