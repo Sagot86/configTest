@@ -3,5 +3,5 @@ server:
 zuul:
  routes:
    users:
-     path: /
+     path: /**
      serviceId: eureka-shop-service
