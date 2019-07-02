@@ -2,6 +2,6 @@ server:
   port: 9080
 zuul:
  routes:
-   users:
+   shop:
      path: /**
      serviceId: eureka-shop-service
