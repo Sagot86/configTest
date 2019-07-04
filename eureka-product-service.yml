@@ -1,7 +1,7 @@
 spring:
  datasource:
   driver-class-name: org.postgresql.Driver
-  url: jdbc:postgresql://165.22.76.72:5432/spring?currentSchema=shop
+  url: jdbc:postgresql://localhost:5432/shop?currentSchema=products
   username: psqluser
   password: Password123
   hikari:
