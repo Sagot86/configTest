@@ -2,12 +2,10 @@ server:
   port: 9080
 zuul:
  routes:
+   product:
+     path: /getproductpage/**
+     url: eureka-product-service
+     stripPrefix: false
    shop:
      path: /**
      serviceId: eureka-shop-service
-   product:
-     path: /pr/** #path that will be intercepted
-     url: eureka-product-service #which url the request will e mapped to
-     stripPrefix: true #if zuul should replace the "/uaa/" segment
-     prefix: /getproductpage/2
-     sensitiveHeaders:
