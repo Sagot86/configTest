@@ -5,3 +5,8 @@ zuul:
    shop:
      path: /**
      serviceId: eureka-shop-service
+   product:
+      path: /pr/** #path that will be intercepted
+      url: eureka-product-service #which url the request will e mapped to
+      stripPrefix: /getproductpage/2 #if zuul should replace the "/uaa/" segment
+      sensitiveHeaders:
