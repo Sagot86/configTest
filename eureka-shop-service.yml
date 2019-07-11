@@ -2,3 +2,10 @@ server:
   port: 8189
   servlet:
     context-path: /shop
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8880/auth/user
+    client:
+      client-id: secureClientToken
+      client-secret: verySecretWord
