@@ -9,3 +9,8 @@ security:
     client:
       client-id: secureClientToken
       client-secret: verySecretWord
+      authorized-grant-types: authorization_code
+      accessTokenUri: http://localhost:9001/oauth/token
+      userAuthorizationUri: http://localhost:9001/oauth/authorize
+      tokenName: my_token
+      scope: webapp
