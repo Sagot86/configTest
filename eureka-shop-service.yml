@@ -13,4 +13,4 @@ security:
       accessTokenUri: http://localhost:8880/oauth/token
       userAuthorizationUri: http://localhost:8880/oauth/authorize
       tokenName: my_token
-      scope: webapp
+      scope: webclient
