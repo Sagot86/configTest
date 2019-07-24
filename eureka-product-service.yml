@@ -3,7 +3,7 @@ server:
 spring:
  datasource:
   driver-class-name: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/shop?currentSchema=products
+  url: jdbc:postgresql://165.22.76.72:5432/shop?currentSchema=products
   username: psqluser
   password: Password123
   hikari:
