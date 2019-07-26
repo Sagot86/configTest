@@ -11,6 +11,7 @@ spring:
 security
  oauth2:
   client:
+   pre-established-redirect-uri: http://eureka-shop-service:8189/login
    redirect-uri: http://eureka-shop-service:8189/login
    use-current-uri: false
  jpa:
