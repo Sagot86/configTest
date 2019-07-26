@@ -17,7 +17,7 @@ spring:
 security:
   oauth2:
     resource:
-      userInfoUri: http://localhost:8880/user
+      userInfoUri: http://eureka-security-service:8880/user
     client:
       client-id: secureClientToken
       client-secret: verySecretWord
