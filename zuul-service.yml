@@ -4,8 +4,12 @@ zuul:
  routes:
    product:
      path: /getproductpage/**
-     url: eureka-product-service
+     serviceId: eureka-product-service
      stripPrefix: false
    shop:
      path: /**
      serviceId: eureka-shop-service
+   auth:
+     serviceId: eureka-security-service
+     stripPrefix: false
+     
