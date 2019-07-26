@@ -5,12 +5,12 @@ server:
 security:
   oauth2:
     resource:
-      userInfoUri: http://eureka-security-service:8880/user
+      userInfoUri: /auth/user
     client:
       client-id: secureClientToken
       client-secret: verySecretWord
       authorized-grant-types: authorization_code
-      accessTokenUri: http://eureka-security-service:8880/oauth/token
-      userAuthorizationUri: http://eureka-security-service:8880/oauth/authorize
+      accessTokenUri: /auth/oauth/token
+      userAuthorizationUri: /auth/oauth/authorize
       tokenName: my_token
       scope: webclient
