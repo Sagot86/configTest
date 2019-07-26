@@ -8,11 +8,11 @@ spring:
   password: Password123
   hikari:
     max-lifetime: 600000
- security
-  oauth2:
-   client:
-    registered-redirect-uri: http://eureka-shop-service:8189/login
-    use-current-uri: false
+security
+ oauth2:
+  client:
+   redirect-uri: http://eureka-shop-service:8189/login
+   use-current-uri: false
  jpa:
   properties:
    hibernate:
