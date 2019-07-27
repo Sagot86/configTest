@@ -11,6 +11,6 @@ zuul:
      serviceId: eureka-shop-service
    auth:
      path: /auth/**
-     serviceId: eureka-security-service
+     serviceId: auth-service
      stripPrefix: false
      
