@@ -5,12 +5,12 @@ server:
 security:
   oauth2:
     resource:
-      userInfoUri: /auth-service:8880/user
+      userInfoUri: /localhost:8880/user
     client:
       client-id: secureClientToken
       client-secret: verySecretWord
       authorized-grant-types: authorization_code
-      accessTokenUri: /auth-service:8880/oauth/token
-      userAuthorizationUri: /auth-service:8880/oauth/authorize
+      accessTokenUri: /localhost:8880/oauth/token
+      userAuthorizationUri: /localhost:8880/oauth/authorize
       tokenName: my_token
       scope: webclient
